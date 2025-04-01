@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNB&B | Where Degens Stay</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1c1c1c;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: hotpink;
+    }
+    .hero p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: #ccc;
+    }
+    .btns {
+      margin-top: 2rem;
+    }
+    .btns a {
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid hotpink;
+      color: hotpink;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btns a:hover {
+      background-color: hotpink;
+      color: black;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>$BNB&B</h1>
+    <p>
+      The decentralized Airbnb meme token on Solana. <br>
+      Where degens book villas, trade rugs, and host CZ.
+    </p>
+    <div class="btns">
+      <a href="https://t.me/officialbnbnb" target="_blank">Join Telegram</a>
+      <a href="https://dexscreener.com/solana/FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" target="_blank">View Chart</a>
+      <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" target="_blank">Buy on Raydium</a>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 BNB&B — Decentralized Airbnb on Solana. No cleaning fees. No refunds. Stay rugged.
+  </div>
+</body>
+</html>
