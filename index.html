@@ -19,10 +19,25 @@
       height: 100vh;
       background-color: #1c1c1c;
       text-align: center;
+      position: relative;
     }
     .hero h1 {
       font-size: 3rem;
       color: hotpink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      animation: pop 1s ease-out forwards;
+      transform: scale(0);
+    }
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
     }
     .hero p {
       max-width: 600px;
@@ -46,6 +61,47 @@
       background-color: hotpink;
       color: black;
     }
+    .meme-section {
+      background-color: #121212;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .meme-section h2 {
+      color: hotpink;
+      margin-bottom: 1rem;
+    }
+    .cz-meme {
+      width: 300px;
+      border-radius: 12px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .roadmap {
+      background-color: #1a1a1a;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .roadmap h2 {
+      color: hotpink;
+      margin-bottom: 1rem;
+    }
+    .roadmap ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+    .roadmap li {
+      margin: 1rem 0;
+      padding: 0.5rem;
+      border-left: 3px solid hotpink;
+      text-align: left;
+    }
     .footer {
       text-align: center;
       padding: 2rem;
@@ -55,7 +111,10 @@
 </head>
 <body>
   <section class="hero">
-    <h1>$BNB&B</h1>
+    <h1>
+      <img class="logo" src="https://bnbnb-nu.vercel.app/logo.png" alt="$ Logo" />
+      BNB&B
+    </h1>
     <p>
       The decentralized Airbnb meme token on Solana. <br>
       Where degens book villas, trade rugs, and host CZ.
@@ -65,6 +124,21 @@
       <a href="https://dexscreener.com/solana/FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" target="_blank">View Chart</a>
       <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" target="_blank">Buy on Raydium</a>
     </div>
+  </section>
+
+  <section class="meme-section">
+    <h2>CZ Rented a Villa with $BNB&B</h2>
+    <img class="cz-meme" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOG50c3Z0YmcydjR3cGxraHdlcDJuYnhwOXpvc3VqZG1uOG5zbzNwNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/r4Fg1L7FCE7Mm/giphy.gif" alt="CZ Villa Meme">
+  </section>
+
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <ul>
+      <li><strong>Phase 1:</strong> Token Launch, LP Burned, Mint Revoked, Community Setup</li>
+      <li><strong>Phase 2:</strong> Meme Campaign, Influencer Collaborations, Airdrops</li>
+      <li><strong>Phase 3:</strong> Website Expansion, NFT Villa Passes, CZ Fan Club</li>
+      <li><strong>Phase 4:</strong> CEX Listings, DAO for Villa Hosts, Global Meme Tour</li>
+    </ul>
   </section>
 
   <div class="footer">
