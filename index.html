@@ -36,10 +36,13 @@
       color: white;
     }
     section {
-      padding: 6rem 2rem 4rem;
-      max-width: 1000px;
-      margin: auto;
-    }
+  padding: 8rem 2rem 6rem;
+  max-width: 1000px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
     .section {
       text-align: center;
     }
@@ -68,15 +71,23 @@
       z-index: 2;
     }
     header h1 {
-      font-size: 5rem;
-      color: hotpink;
-    }
+  font-size: 5rem;
+  color: hotpink;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
     header p {
-      font-size: 2rem;
-      color: #ccc;
-      max-width: 800px;
-      margin-top: 1rem;
-    }
+  font-size: 2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 2.2s ease-out forwards;
+  animation-delay: 0.9s;
+}
     .buttons a {
       display: inline-block;
       margin: 1rem 1rem 0 1rem;
@@ -112,7 +123,20 @@
       animation: floatCZ 3s ease-in-out infinite;
     }
     @keyframes floatCZ {
-      0%, 100% { transform: translateY(0); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
       50% { transform: translateY(-10px); }
     }
     footer {
