@@ -155,6 +155,22 @@
       opacity: 1;
       transform: translateY(0);
     }
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: hotpink;
+      text-decoration: none;
+      animation: bounceDown 2s infinite;
+      z-index: 3;
+    }
+
+    @keyframes bounceDown {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 10px); }
+    }
 </style>
 </head>
 <body>
@@ -168,6 +184,7 @@
   </nav>
 
   <header id="home">
+  <a href="#about" class="scroll-down">↓</a>
     <h1>BNB&B</h1>
     <p>Where Degens Stay</p>
     <div class="buttons">
