@@ -18,7 +18,7 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(10px);
       z-index: 1000;
       display: flex;
@@ -34,6 +34,14 @@
     }
     nav a:hover {
       color: white;
+    }
+    section {
+      padding: 6rem 2rem 4rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      text-align: center;
     }
     header {
       background: url('villa-background.png') no-repeat center center/cover;
@@ -62,82 +70,12 @@
     header h1 {
       font-size: 5rem;
       color: hotpink;
-      animation: popIn 1s ease-out forwards;
-      opacity: 0;
     }
     header p {
       font-size: 2rem;
       color: #ccc;
       max-width: 800px;
       margin-top: 1rem;
-      animation: popIn 1.2s ease-out forwards;
-      opacity: 0;
-    }
-    .section {
-      padding: 4rem 2rem;
-      text-align: center;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    .section.reveal {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .section h2 {
-      color: hotpink;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-    .litepaper {
-      max-width: 800px;
-      margin: 0 auto 4rem;
-      background-color: #1a1a1a;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
-      text-align: left;
-      font-size: 1.1rem;
-    }
-    .litepaper h3 {
-      color: hotpink;
-      margin-bottom: 1rem;
-      font-size: 1.6rem;
-    }
-    .litepaper p {
-      line-height: 1.8;
-      color: #ddd;
-    }
-    .litepaper ul {
-      margin-top: 1rem;
-      color: #ccc;
-    }
-    .swap-widget {
-      margin: 2rem auto;
-      max-width: 420px;
-      height: 500px;
-    }
-    .tokenomics {
-      max-width: 600px;
-      margin: auto;
-      text-align: left;
-      font-size: 1.1rem;
-    }
-    .tokenomics ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .tokenomics li {
-      margin-bottom: 1rem;
-      border-left: 4px solid hotpink;
-      padding-left: 1rem;
-    }
-    footer {
-      background: #111;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #aaa;
     }
     .buttons a {
       display: inline-block;
@@ -153,9 +91,17 @@
     .buttons a:hover {
       box-shadow: 0 0 12px hotpink;
     }
-    @keyframes popIn {
-      0% { opacity: 0; transform: scale(0.8); }
-      100% { opacity: 1; transform: scale(1); }
+    h2 {
+      color: hotpink;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .litepaper, .tokenomics, .roadmap {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+      text-align: left;
     }
     .floating-cz {
       position: fixed;
@@ -169,34 +115,40 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-10px); }
     }
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#">Home</a>
-    <a href=".#about">About</a>
-    <a href=".#swap">Buy</a>
-    <a href=".#tokenomics">Tokenomics</a>
-    <a href=".#roadmap">Roadmap</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#buy">Buy</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roadmap">Roadmap</a>
     <a href="https://t.me/officialbnbnb" target="_blank">Telegram</a>
   </nav>
 
-  <header>
+  <header id="home">
     <h1>BNB&B</h1>
     <p>Where Degens Stay</p>
     <div class="buttons">
       <a href="https://dexscreener.com/solana/FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" target="_blank">📈 View Chart</a>
       <a href="https://t.me/officialbnbnb" target="_blank">💬 Join Telegram</a>
-      <a href="#swap">💸 Buy $BNB&B</a>
+      <a href="#buy">💸 Buy $BNB&B</a>
     </div>
   </header>
 
-  <section class="section litepaper">
-    <h3>What is BNB&B?</h3>
+  <section id="about" class="section litepaper">
+    <h2>What is BNB&B?</h2>
     <p><strong>BNB&B</strong> is a community-powered travel token built on Solana — where degens, memes, and real-world utility meet under one digital roof.</p>
     <p>Born as a meme tribute to Airbnb and BNB culture, $BNB&B started with CZ jokes, rug memes, and villas for vibes. But behind the humor lies a real mission: to decentralize travel, reward community contribution, and build a future where you can book your next stay, trip, or experience using $BNB&B.</p>
     <p>We’re not here to replace the travel industry — we’re here to reinvent it. From meme contests to NFT villa passes, BNB&B bridges on-chain culture with off-chain adventure.</p>
-    <p><em>Because degens deserve holidays, too.</em></p>
     <ul>
       <li>✅ Travel-focused utility</li>
       <li>✅ Meme-first, but mission-aligned</li>
@@ -205,51 +157,43 @@
     </ul>
   </section>
 
-  <section class="section" id="swap">
+  <section id="buy" class="section">
     <h2>Buy $BNB&B</h2>
     <div class="swap-widget">
-      <iframe src="https://jup.ag/swap/USDC-FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" width="100%" height="100%" frameborder="0"></iframe>
+      <iframe src="https://jup.ag/swap/USDC-FEGmKEXPzCrder8622FnXXDySsxAJFD1Sv3Agnav14kN" width="100%" height="500" frameborder="0"></iframe>
     </div>
   </section>
 
-  <section class="section">
+  <section id="tokenomics" class="section tokenomics">
     <h2>Tokenomics</h2>
-    <div class="tokenomics">
-      <ul>
-        <li><strong>14%</strong> — Liquidity & Initial Trading</li>
-        <li><strong>50%</strong> — Community Airdrops & Meme Incentives</li>
-        <li><strong>36%</strong> — Burn Reserve (subject to community votes)</li>
-      </ul>
-      <p>
-        Total Supply: 1,000,000,000 $BNB&B<br>
-        🔥 LP burned | 🔒 Mint revoked | 🛏️ No cleaning fees
-      </p>
-    </div>
+    <ul>
+      <li><strong>14%</strong> — Liquidity & Initial Trading</li>
+      <li><strong>50%</strong> — Community Airdrops & Meme Incentives</li>
+      <li><strong>36%</strong> — Burn Reserve (subject to community votes)</li>
+    </ul>
+    <p>
+      Total Supply: 1,000,000,000 $BNB&B<br>
+      🔥 LP burned | 🔒 Mint revoked | 🛏️ No cleaning fees
+    </p>
   </section>
 
-  <section class="section">
+  <section id="roadmap" class="section roadmap">
     <h2>Roadmap</h2>
-    <div class="tokenomics">
+    <ul>
+      <li><strong>Phase 1:</strong> Token launch, LP burned, mint revoked, site live</li>
+      <li><strong>Phase 2:</strong> Meme campaigns, CZ villa memes, community growth</li>
+      <li><strong>Phase 3:</strong> Meme contest, token burns, listing push</li>
+      <li><strong>Phase 4:</strong> NFT Villa Passes, “Rug & Fly” event, meme utility staking</li>
+      <li><strong>Phase 5:</strong> Partnered DAO for travel hosts, Solana booking prototype, mobile app test</li>
+    </ul>
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #2a2a2a; border-left: 4px solid hotpink; border-radius: 8px;">
+      <h3 style="color: hotpink;">🌅 Coming Soon</h3>
       <ul>
-        <li><strong>Phase 1:</strong> Token launch, LP burned, mint revoked, site live</li>
-        <li><strong>Phase 2:</strong> Meme campaigns, CZ villa memes, community growth</li>
-        <li><strong>Phase 3:</strong> Meme contest, token burns, listing push</li>
-        <li><strong>Phase 4:</strong> NFT Villa Passes, "Rug & Fly" event, meme utility staking</li>
-        <li><strong>Phase 5:</strong> Partnered DAO for travel hosts, Solana booking prototype, mobile app test</li>
+        <li>🤝 Real-world villa partnerships</li>
+        <li>🛠️ Full travel booking utility</li>
+        <li>🏛️ Community voting and DAO upgrades</li>
       </ul>
-      <div style="margin-top: 2rem; padding: 1.5rem; background: #1a1a1a; border-left: 4px solid hotpink; border-radius: 8px;">
-        <h3 style="color: hotpink;">🌅 Coming Soon</h3>
-        <p>
-          The villa vision continues... <br>
-          We're already exploring:
-        </p>
-        <ul style="margin-top: 1rem;">
-          <li>🤝 Real-world villa partnerships</li>
-          <li>🛠️ Full travel booking utility</li>
-          <li>🏛️ Community voting and DAO upgrades</li>
-        </ul>
-        <p style="margin-top: 1rem; color: #ccc;"><em>More details soon — we’re building this the BNB&B way: one comfy stay at a time.</em></p>
-      </div>
+      <p style="margin-top: 1rem; color: #ccc;"><em>More details soon — we’re building this the BNB&B way: one comfy stay at a time.</em></p>
     </div>
   </section>
 
@@ -258,21 +202,5 @@
   <footer>
     &copy; 2025 BNB&B — Where Degens Stay. Built with memes. Powered by rugs.
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
