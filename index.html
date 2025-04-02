@@ -73,8 +73,10 @@
       z-index: 2;
     }
     header h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: hotpink;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0 0 10px hotpink;
   opacity: 0;
   transform: translateY(40px);
   animation: fadeInUp 1.8s ease-out forwards;
@@ -93,16 +95,17 @@
   animation-delay: 0.9s;
 }
     .buttons a {
-      display: inline-block;
-      margin: 1rem 1rem 0 1rem;
-      padding: 0.75rem 1.5rem;
-      background: hotpink;
-      color: black;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: box-shadow 0.3s ease;
-    }
+  display: inline-block;
+  margin: 1rem 1rem 0 1rem;
+  padding: 0.75rem 1.5rem;
+  background: hotpink;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease, transform 1s ease-in-out;
+  animation: floatSoft 3s ease-in-out infinite;
+}
     .buttons a:hover {
       box-shadow: 0 0 12px hotpink;
     }
@@ -136,6 +139,16 @@
     opacity: 0;
     transform: translateY(40px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
   100% {
     opacity: 1;
     transform: translateY(0);
