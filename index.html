@@ -8,13 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Kanit', sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
-      scroll-behavior: smooth;
-      font-size: 18px;
-    }
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  scroll-behavior: smooth;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
     nav {
       position: fixed;
       top: 0;
@@ -188,6 +191,28 @@
       0%, 100% { transform: translate(-50%, 0); }
       50% { transform: translate(-50%, 10px); }
     }
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+  .section {
+    padding: 4rem 1rem;
+  }
+  .buttons a {
+    margin: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+  .tokenomics ul {
+    font-size: 1rem;
+  }
+  .litepaper, .tokenomics {
+    padding: 1rem;
+  }
+}
 </style>
 </head>
 <body>
